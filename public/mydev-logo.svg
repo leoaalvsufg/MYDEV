@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4040FF" />
+      <stop offset="50%" stop-color="#8000FF" />
+      <stop offset="100%" stop-color="#00BFFF" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Text MY -->
+  <text x="30" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="60" fill="url(#gradient)" filter="url(#glow)">MY</text>
+  
+  <!-- Lightning Bolt -->
+  <path d="M150 20 L140 50 L160 50 L140 80" stroke="url(#gradient)" stroke-width="8" fill="none" filter="url(#glow)" />
+  
+  <!-- Text DEV -->
+  <text x="170" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="60" fill="url(#gradient)" filter="url(#glow)">DEV</text>
+</svg>
